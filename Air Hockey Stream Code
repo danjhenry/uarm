@@ -14,6 +14,8 @@ ARM_Y_MAX = 220
 
 RESCALE_FACTOR = 0.5
 cap = cv2.VideoCapture(1)
+#set cv2 frame buffer to 1
+cap.set(cv2.CAP_PROP_BUFFERSIZE,1)
 
 WIDTH = int(1280*RESCALE_FACTOR)
 HEIGHT = int(720*RESCALE_FACTOR)
